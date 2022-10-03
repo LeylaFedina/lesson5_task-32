@@ -33,9 +33,7 @@ Console.WriteLine("]");
         }
             return incommingArray;
 }
-Console.WriteLine("]");
-return reverseArray;
-}
+
 
 int[] currentArray = getRandomArray(12, -9, 9);
 printArray(currentArray);
