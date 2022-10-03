@@ -3,46 +3,41 @@
 [-4, -8, 8, 2] -> [4, 8, -8, -2]
 */
 
-int [] getRandomArray (int length, int startPoint, int endPoint)
+int[] getRandomArray(int length, int startPoint, int endPoint)
 {
-    int [] resultArray = new int [length];
-    for (int i = 0; i < length; i ++)
+    int[] resultArray = new int[length];
+    for (int i = 0; i < length; i++)
     {
-        resultArray [i] = new Random().Next(startPoint, endPoint + 1);
+        resultArray[i] = new Random().Next(startPoint, endPoint + 1);
     }
-    return resultArray;
+        return resultArray;
 }
-void printArray (int [] incommingArray)
-{
-    Console.Write("[");
-    for (int i = 0; i < incommingArray.Length; i++)
+void printArray(int[] incomingArray)
     {
-        Console.Write(incommingArray [i]);
-        if (i < incommingArray.Length - 1)
+        Console.Write("[");
+        for (int i = 0; i < incomingArray.Length; i++)
         {
-            Console.Write(",");
-        }
+        Console.Write(incomingArray[i]);
+        if (i < incomingArray.Length - 1)
+            {
+                Console.Write(",");
+            }
     }
-    Console.WriteLine ("]");
-
-int [] reverseArray (int [] incommingArray)
-{
-    Console.Write("[");
-    for (int i = 0; i < incommingArray.Length; i++)
+Console.WriteLine("]");
     {
-         incommingArray [i] = incommingArray [i] * (-1);
-        Console.Write(incommingArray [i]);
-        if (i < incommingArray.Length - 1)
+        int reverseArray(int[] incomingArray)
+     }
+    for (int i = 0; i < incomingArray.Length; i++)
         {
-            Console.Write(",");
+            incomingArray[i] = incomingArray[i] * (-1);
         }
-    }
-    Console.WriteLine ("]");
-
-
+            return incommingArray;
+}
+Console.WriteLine("]");
+return reverseArray;
 }
 
-int [] currentArray = getRandomArray(12,-9,9);
-printArray (currentArray);
-int [] reverseArray = getRandomArray(12,-9,9);
-printArray (reverseArray);
+int[] currentArray = getRandomArray(12, -9, 9);
+printArray(currentArray);
+int[] currentArrayTwo = reverseArray(currentArray);
+printArray(currentArrayTwo);
